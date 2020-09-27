@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib as mpl
+import math
 import random
 import time
 
@@ -29,7 +29,7 @@ def polynomCalcus(arr):
     x = 1.5
     s = 0
     for i in range(len(arr)):
-        s += arr[i] * (x ** i)
+        s += arr[i] * math.pow(x, i)
     return s
 
 
